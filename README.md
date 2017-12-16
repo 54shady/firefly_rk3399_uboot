@@ -19,9 +19,10 @@ Generate trust.img
 	./trust_merger trust.ini
 	mv trust.img ../out/
 
-Flash Image
+Flash Image(MaskRom Mode)
 
 	rkdeveloptool db rk3399_loader_v1.08.106.bin
 	rkdeveloptool wl 0x40 idbloader.img
 	rkdeveloptool wl 0x4000 uboot.img
 	rkdeveloptool wl 0x6000 trust.img
+	rkdeveloptool rd
